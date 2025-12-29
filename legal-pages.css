@@ -1,0 +1,110 @@
+/* ===== Common Legal Pages Design ===== */
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --primary: #4f46e5;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* Page wrapper */
+.legal-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px 16px 60px;
+}
+
+/* Card container */
+.legal-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 32px 28px;
+}
+
+/* Page title */
+.legal-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Subtitle / date */
+.legal-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+/* Section headings */
+.legal-card h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+/* Paragraphs */
+.legal-card p {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+/* Lists */
+.legal-card ul {
+  margin: 10px 0 20px 20px;
+  color: var(--muted);
+}
+
+.legal-card li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.legal-card a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.legal-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer nav */
+.legal-footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.legal-footer a {
+  margin: 0 8px;
+  color: var(--primary);
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .legal-title {
+    font-size: 1.8rem;
+  }
+
+  .legal-card {
+    padding: 24px 18px;
+  }
+}
